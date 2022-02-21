@@ -88,10 +88,13 @@ body {
    background-color: var(--white-color);
    border-bottom: 1px solid #ececec;
 }
-
+.contacts-link:focus .contacts-icon,
+.contacts-link:hover .contacts-icon {
+   fill: var(--accent-color);
+}
+.contacts-link:hover,
 .contacts-link:focus,
 .nav-links-link:hover,
-.contacts-link:hover,
 .nav-links-link:focus,
 .contacts-link-footer:hover,
 .contacts-link-footer:focus,
@@ -156,7 +159,7 @@ body {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   margin: auto;
+   margin: 0 auto;
 }
 
 .feature-list-item h3 {
@@ -333,7 +336,9 @@ body {
    align-items: center;
 }
 .contacts-icon {
+   display: flex;
    margin-right: 10px;
+   fill: var(--secondary-color);
 }
 .wrapper-icon {
    display: flex;
@@ -368,14 +373,18 @@ body {
 .social-list-link:focus .social-list-icon {
    fill: var(--white-color);
 }
+.clients-list-icon:hover,
+.clients-list-icon:focus {
+   fill: var(--accent-color);
+}
 .social-list-link:hover,
 .social-list-link:focus {
    background-color: var(--accent-color);
 }
 .clients-section > h2 {
-   font-weight: bold;
+   font-weight: 700;
    font-size: 36px;
-   margin-bottom: 20px;
+   margin-bottom: 50px;
    line-height: calc(42 / 36);
    text-align: center;
 }
@@ -424,8 +433,6 @@ body {
    justify-content: space-between;
 }
 .contact-us-block {
-   margin-top: 72px;
-   margin-bottom: 100px;
    margin-left: 70px;
 }
 .social-list-icon-footer {
