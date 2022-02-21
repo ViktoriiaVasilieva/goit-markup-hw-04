@@ -410,8 +410,8 @@ body {
 .clients-list-item {
    width: 170px;
 }
-.clients-list-link:hover .clients-list--icon,
-.clients-list-link:focus .clients-list--icon {
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
    fill: var(--accent-color);
 }
 
